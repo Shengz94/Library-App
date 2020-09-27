@@ -1,0 +1,74 @@
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="library">
+
+        <h1>Book Tracker</h1>
+
+        <div class="list-container">
+            <div class="table">
+                <h2>Books</h2>
+                <table class="book-list">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th>Read</th>
+                            <th>Remove</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="book-form-container">
+                <div class="form">
+                    <h2>Add book</h2>
+                    <form name="book-form">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="nameInput" required>
+                        </div>
+                        <div>
+                            <label for="author">Author:</label>
+                            <input type="text" name="author" id="authorInput">
+                        </div>
+                        <div>
+                            <label for="pages">Number of pages:</label>
+                            <input type="number" name="pages" id="pagesInput" value="1">
+                        </div>
+                        <div>
+                            <label for="read">Have you read it?:</label>
+                            <input type="checkbox" name="read" id="readInput">
+                        </div>
+                        <div>
+                            <input type="button" name="submit" value="Add book"  onclick="createBook()">
+                        </div>
+                        <div class="result-text"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="disclaimer">
+                <h2>Disclaimer</h2>
+                <p>This app uses the browser's local storage. </p>
+                <p>The data stored in the browser can be wiped without notice</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+<footer>
+    <a href="https://github.com/Shengz94">Sheng Zhu</a>
+</footer>
